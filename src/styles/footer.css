@@ -1,0 +1,78 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background: var(--light-red-color);
+}
+
+.footer__logo img {
+  width: calc(100% - 80%);
+  margin-bottom: 5px;
+}
+
+.footer__logo h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.footer__logo p {
+  line-height: 28px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.footer__title {
+  color: var(--black-text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.delivery__time-item {
+  background: transparent;
+}
+
+.delivery__time-item span {
+  color: var(--black-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.delivery__time-item p {
+  color: var(--black-text-color);
+}
+
+.newsletter {
+  padding: 10px;
+  border: 1px solid var(--black-text-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter input {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.newsletter input:focus {
+  outline: none;
+}
+.newsletter input::placeholder {
+  color: var(--black-text-color);
+}
+.newsletter span {
+  color: var(--red-color);
+  cursor: pointer;
+}
+
+.copyright__text {
+  font-size: 0.8rem;
+  color: var(--red-color);
+}
+
+.social__links span svg {
+  color: var(--red-color);
+  font-size: 1.1rem;
+}
