@@ -1,0 +1,15 @@
+.search__widget,
+.sorting__widget select {
+  border: 1px solid var(--light-red-color);
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search__widget input {
+  border: none;
+}
+
+.search__widget input:focus {
+  outline: none;
+}

@@ -12,6 +12,9 @@ import featureImg02 from "../assets/images/service-02.png";
 import featureImg03 from "../assets/images/service-03.png";
 
 import whyImg from "../assets/images/location.png";
+import networkImg from "../assets/images/network.png";
+
+import { TestimonialSlider } from "../components/UI/slider/TestimonialSlider";
 
 import foodCategoryImg01 from "../assets/images/hamburger.png";
 import foodCategoryImg02 from "../assets/images/pizza.png";
@@ -164,7 +167,7 @@ export const Home = () => {
               </p>
             </Col>
             {featureData.map((item, index) => (
-              <Col lg='4' md='4' key={index} className='mt-5'>
+              <Col lg='4' md='6' sm='6' key={index} className='mt-5'>
                 <div className='feature__item text-center px-5 py-3'>
                   <img
                     src={item.imgUrl}
@@ -233,7 +236,7 @@ export const Home = () => {
             </Col>
 
             {allProducts.map((item) => (
-              <Col lg='3' md='4' key={item.id} className='mt-5'>
+              <Col lg='3' md='4' sm='6' xs='6' key={item.id} className='mt-5'>
                 <ProductCard item={item} />
               </Col>
             ))}
@@ -260,7 +263,7 @@ export const Home = () => {
                   laborum pariatur quibusdam.
                 </p>
 
-                <ListGroup className='mt-5'>
+                <ListGroup className='mt-4'>
                   <ListGroupItem className='border-0'>
                     <p className='choose__us-title d-flex align-items-center gap-2'>
                       <FaCircleCheck />
@@ -313,6 +316,34 @@ export const Home = () => {
                 <ProductCard item={item} />
               </Col>
             ))}
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg='6' md='6'>
+              <div className='testimonial'>
+                <h5 className='testimonial__subtitle mb-4'>Testimonial</h5>
+
+                <h2 className='testimonial__title mb-4'>
+                  What our <span>customers</span> are saying
+                </h2>
+
+                <p className='testimonial__desc'>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Possimus vitae sit eos aliquid voluptatem? Possimus provident
+                  hic at voluptatibus ad?
+                </p>
+
+                <TestimonialSlider />
+              </div>
+            </Col>
+
+            <Col lg='6' md='6'>
+              <img src={networkImg} alt='testimonial-img' className='w-100' />
+            </Col>
           </Row>
         </Container>
       </section>
