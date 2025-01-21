@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Helmet } from "../components/Helmet/Helmet";
 import { CommonSection } from "../components/UI/common-section/CommonSection";
 import ReactPaginate from "react-paginate";
