@@ -34,7 +34,7 @@ export const FoodDetails = () => {
     );
   };
 
-  const submitHandler = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
   };
 
@@ -133,7 +133,7 @@ export const FoodDetails = () => {
                     <p className='feedback__text'>great product</p>
                   </div>
 
-                  <form action='' className='form' onSubmit={submitHandler}>
+                  <form action='' className='form' onSubmit={handleSubmit}>
                     <div className='form__group'>
                       <input
                         type='text'
